@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/simple.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="sponsor">
+      <img src="assets/images/logo.svg"><span>¡Muerte al JavaScript, larga vida al JavaScript!<strong>&nbsp; @sanzante</strong></span>
+    </div>
+    <div class="reveal">
+      <div class="slides">
+        <section  data-background-image="assets/images/portada.png">
+          <div class="wrap-ovl">
+            <br>
+            <div class="session-title">
+              ¡Muerte al JavaScript, larga vida al JavaScript!
+            </div>
+            <br>
+            <br>
+            Ricardo Sanz
+            <br>
+            <span class="xsmall"> sanzante / tunic</span>
+            <br>
+          </div>
+          <div class="spacer">
+        </section>
+        <section>
+            <img src="assets/images/sanzante.jpg" class="profile-photo">
+            <p>
+              <span>Ricardo Sanz</span>
+              <br>
+              <span class="xsmall"><em>Drupal Developer &amp; DevOps</em></span>
+              <br>
+              <a class="xsmall" href="https://drupal.org/u/tunic" target="_blank">drupal.org/u/tunic</a>
+              <br>
+              <a class="xsmall" href="https://twitter.com/sanzante" target="_blank">sanzante</a>
+            </p>
+            <img src="assets/images/metadrop-logo.svg" class="metadrop-logo">
+        </section>
+
+
+
+        <section>
+          <div class="header">
+            <span>JavaScript</span>
+          </div>
+          <ul>
+            <li class="fragment">Desarrollado por Brendan Eich para Netscape Communicator en 1995.</li>
+            <li class="fragment">LLamado Mocha, luego LiveScript, finalmente JavaScript.</li>
+            <li class="fragment">Prototipo desarrolado en pocas semanas.</li>
+            <li class="fragment">Sintaxis parecida a Java pero núcleo muy diferente.</li>
+            <li class="fragment">Inspirado por Scheme (funciones como objetos) y Self (herencia mediante prototipos).</li>
+            <li class="fragment">Originalmente también pensado para el servidor.</li>
+            <li class="fragment">Años oscuros: JScript.</li>
+          </ul>
+          <aside class="notes">
+          </aside>
+        </section>
+
+
+
+        <section>
+          <div class="header">
+            <span>JavaScript</span>
+          </div>
+          <ul>
+            <li class="fragment">Estandarizado por ECMA.</li>
+            <li class="fragment">ECMAScript 1 (1995).</li>
+            <li class="fragment">ECMAScript 2 (1998): Pequeñas mejoras.</li>
+            <li class="fragment">ECMAScript 3 (1998): RegExp, excepciones, gestión de errores, mejora gestión de cadenas.</li>
+            <li class="fragment">XHTMLRequest.</li>
+            <li class="fragment">ECMAScript 4 (Abandonada): Grandes cambios y muchas funcionaliades nuevas.</li>
+            <li class="fragment">ECMAScript 5 (3.1) (2009): modo strict, afinación general, soporte JSON, mejora reflexibidad.</li>
+          </ul>
+          <aside class="notes">
+          </aside>
+        </section>
+
+
+        <section>
+          <div class="header">
+            <span>ECMAScript 6 (2015)</span>
+          </div>
+          <ul>
+            <li class="fragment">Clases.</li>
+            <li class="fragment">Iteradores.</li>
+            <li class="fragment">Generadores.</li>
+            <li class="fragment">Funciones flecha.</li>
+            <li class="fragment">Promesas.</li>
+            <li class="fragment">Otras mejoras.</li>
+          </ul>
+          <aside class="notes">
+          </aside>
+        </section>
+
+
+
+        <section>
+          <div class="header">
+            <span>Uso</span>
+          </div>
+            <img src="assets/images/mostpopulartechs.png">
+          <aside class="notes">
+          </aside>
+        </section>
+
+
+
+
+
+        <section>
+          <div class="header">
+            <span>JavaScript</span>
+          </div>
+          <ul>
+            <li class="fragment">Lenguaje multiparadigma (OOP clásico, prototipado, funcional).</li>
+            <li class="fragment">Flexible.</li>
+            <li class="fragment">Muy débilmente tipado, coerción agrevisa ("1,6" == [1,6]).</li>
+            <li class="fragment">Flexible.</li>
+            <li class="fragment">Tipado dinámico.</li>
+            <li class="fragment">Muy flexible.</li>
+            <li class="fragment">Funciones como objetos.</li>
+            <li class="fragment">Extremadamente flexible.</li>
+          </ul>
+
+          <aside class="notes">
+          </aside>
+        </section>
+
+
+
+
+        <section>
+          <div class="header">
+            <span>¡Muerte al JavaScript!</span>
+          </div>
+          <ul>
+            <li class="fragment">Parece un lenguaje OOP clásico pero no lo es.</li>
+            <li class="fragment">Difícil de entender completamente.</li>
+            <li class="fragment">Depuración problemática según como se use.</li>
+            <li class="fragment">La combinación de paradigmas puede dificultar el diseño una aplicación.</li>
+            <li class="fragment">La combinación de paradigmas dificulta la comprensión del código.</li>
+            <li class="fragment">Tan flexible que es fácil dispararse en un pie. Lint.</li>
+            <li class="fragment">Difícil de mantener en proyectos medio-grandes.</li>
+            <li class="fragment">ES6 trata de solventarlo, infructuosamente (¿Clases? No del todo.)</li>
+          </ul>
+        </section>
+
+
+
+
+        <section>
+          <div class="header">
+            <span>¿Muerte?</span>
+          </div>
+          <ul>
+            <li class="fragment">Por fin estandarizado y compatible en todos los navegadores.</li>
+            <li class="fragment">Ejecutable en servidor.</li>
+            <li class="fragment">Cumple la promesa: <i>Write once, run everywhere</i>.</li>
+            <li class="fragment">Miriada de librerías y frameworks para casi cualquier cosa.</li>
+          </ul>
+          <aside class="notes">
+          </aside>
+        </section>
+
+
+
+        <section>
+          <div class="header">
+            <span>Ensamblador o <i>bytecode</i> de la web</span>
+          </div>
+          <ul>
+            <li class="fragment">Potente.</li>
+            <li class="fragment">Flexible.</li>
+            <li class="fragment">Ejecutar en cualquier parte.</li>
+            <li class="fragment">Complejo para proyectos grandes.</li>
+          </ul>
+          <aside class="notes">
+          </aside>
+        </section>
+
+
+
+        <section>
+          <div class="header">
+            <span>Transpilación</span>
+          </div>
+          <ul>
+            <li class="fragment">Transpilación: convertir código de un lenguaje a otro.</li>
+            <li class="fragment">Usar un lenguaje transpilable a JavaScript.</li>
+            <li class="fragment">Obtenemos las ventajas de JavaScript junto a las ventajas del otro lenguaje.</li>
+          </ul>
+          <aside class="notes">
+          </aside>
+        </section>
+
+
+
+        <section>
+          <div class="header">
+            <span>TypeScript</span>
+          </div>
+          <ul>
+            <li class="fragment">Superconjunto de JavaScript.</li>
+            <li class="fragment">Usado en Angular.</li>
+            <li class="fragment">Fuertemente tipado.</li>
+            <li class="fragment">Tipado estático.</li>
+            <li class="fragment">Construcción de tipos.</li>
+            <li class="fragment">Clases, interfaces, enumerados, etc.</li>
+            <li class="fragment">Sistema de módulos..</li>
+          </ul>
+          <aside class="notes">
+          </aside>
+        </section>
+
+
+        <section>
+          <div class="header">
+            <span>Elm</span>
+          </div>
+          <ul>
+            <li class="fragment">Paradigma funcional (declarativa).</li>
+            <li class="fragment">Impide errores de ejecución (null, undefined, etc).</li>
+            <li class="fragment">Tipado estático.</li>
+            <li class="fragment">Sistema de módulos.</li>
+            <li class="fragment">Transpilable e interoperable con JavaScript.</li>
+          </ul>
+          <aside class="notes">
+          </aside>
+        </section>
+
+
+
+
+        <section>
+          <div class="header">
+            <span>Otros lenguajes</span>
+          </div>
+          <ul>
+            <li class="fragment">CoffeScript y loqueseaScript.</li>
+            <li class="fragment">Dart.</li>
+            <li class="fragment">Java.</li>
+            <li class="fragment">Kotlin.</li>
+            <li class="fragment">Scala.</li>
+            <li class="fragment"><a href="https://github.com/jashkenas/coffeescript/wiki/list-of-languages-that-compile-to-js">Muchos otros</a>.</li>
+          </ul>
+          <aside class="notes">
+          </aside>
+        </section>
+
+
+        <section>
+          <div class="header">
+            <span>¡Larga vida al Javascript!</span>
+          </div>
+          <ul>
+            <li class="fragment">Aprovechar las ventajas de JavaScript sin sus problemas.</li>
+            <li class="fragment">Proyectos pequeños: JavaScript.</li>
+            <li class="fragment">Proyectos medio-grandes: Lenguaje transpilado.</li>
+            <li class="fragment">Proyectos medio-grandes: Amplia cobertura de tests unitarios y de integración..</li>
+          </ul>
+          <aside class="notes">
+          </aside>
+        </section>
+
+
+
+        <section>
+          <div class="header">
+            <span>¿Preguntas?</span>
+          </div>
+          <ul>
+          <aside class="notes">
+          </aside>
+        </section>
+
+
+        <section>
+          <div class="header">
+            <span>¡Gracias!</span>
+          </div>
+          <ul>
+          <aside class="notes">
+          </aside>
+        </section>
+      </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>
